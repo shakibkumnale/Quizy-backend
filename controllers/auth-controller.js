@@ -203,7 +203,7 @@ const getquetion = async (req, res) => {
 
 const fetchtopic = async (req, res) => {
   try {
-    const { _id } = req.userData;
+    const { _id } = req.userData || "66e5ea97d63f397f69875911";
     const TopicArray = await UserModel.findOne({ _id }, { _id: 0, Topics: 1 });
 
     console.log(TopicArray);

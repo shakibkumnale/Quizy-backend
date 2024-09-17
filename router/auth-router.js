@@ -7,8 +7,9 @@ const {home,register,score,fetchtopic,getquetion, selecttopic,login,otp,user,}=r
 
 router.route('/api/users/login').post(login)
 router.route('/otp').post(otp)
-router.route('/api/users/home').get(home)
+router.route('/').get(home)
 router.route('/fetchtopic').post(auth ,fetchtopic)
+router.route('/f').post( fetchtopic)
 router.route('/api/questions/:topic').post(auth,getquetion)
 router.route('/user').get(auth,user)
 router.route('/score').post(auth,score)
