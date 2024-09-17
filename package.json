@@ -2,11 +2,7 @@
   "name": "Quiz",
   "version": "1.0.0",
   "main": "app.js",
-  "engines": {
-    "node": "22.2.0", 
-    "npm": "10.8.1"    
-  },
-  "scripts": {
+    "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js -e js"
   },
