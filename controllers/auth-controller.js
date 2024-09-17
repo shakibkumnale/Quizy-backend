@@ -137,6 +137,7 @@ const getquetion = async (req, res) => {
   try {
     const { _id } = req.userData;
     var topic = req.params.topic;
+    if(topic === "Programming-Logic"){
       topic = "Programming Logic";
     }
     if (topic === "React-Native") {

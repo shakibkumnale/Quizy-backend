@@ -21,7 +21,7 @@ const auth = async (req, res, next) => {
 
         let verifyUser;
         try {
-            verifyUser = jwt.verify(token, "shaka");
+            verifyUser = jwt.verify(token, process.env.KEY);
         } catch (error) {
             return res.status(401).send("Invalid token");
         }
